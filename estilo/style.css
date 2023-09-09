@@ -5,9 +5,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* 
     Paleta de Cores
 
 */
+
+body, html {
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#login {
+    background-color: #fff;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.450);
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+}
+
+
+#login > #imagem {
+    display: block;
+    background: url(../img/login-projeto.jpg) no-repeat ;
+    height: 200px;
+    background-size: cover;
+    background-position: bottom top;
+}
+
+#login > #formulario {
+    display: block;
+    padding: 10px;
+
+}
+
