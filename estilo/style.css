@@ -22,28 +22,31 @@ body, html {
 main {
     height: 100vh;
     width: 100vw;
-    /* position: relative; */
-    display: flex;
+    position: relative;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 } 
 
-#login {
+section#login {
     background-color: #fff;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.450);
-    /* position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 
 }
 
 
-#login > #imagem {
+section#login > div#imagem {
     display: block;
     background: url(../img/login-projeto.jpg) no-repeat ;
     height: 200px;
@@ -51,7 +54,7 @@ main {
     background-position: bottom top;
 }
 
-#login > #formulario {
+section#login > div#formulario {
     display: block;
     padding: 10px;
 
