@@ -81,6 +81,11 @@ section#login > div#formulario {
     /* border-radius: 5px; */
     border:none;
     border-bottom: 1px solid #ccc;
+
+    &:focus {
+        border-bottom: 1px solid red;
+        background-color: #cccccc3f;
+    }
 }
 
 a {
