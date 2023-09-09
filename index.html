@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Login</title>
+    <script
+      src="https://kit.fontawesome.com/fc1d6ae1da.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="estilo/style.css" />
-    <link rel="stylesheet" href="estilo/media-query.css">
+    <link rel="stylesheet" href="estilo/media-query.css" />
   </head>
   <body>
     <main>
@@ -13,9 +17,42 @@
         <div id="imagem"></div>
         <div id="formulario">
           <h1>Login</h1>
-          <p>Seja Bem-vindo(a)</p>
-          <form action="login.pho" method="post">
-
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe a
+            velit aliquid harum inventore praesentium natus esse
+          </p>
+          <form action="login.pho" method="post" autocomplete="on">
+            <div class="campo">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                name="login"
+                id="ilogin"
+                placeholder="seu email"
+                autocomplete="email"
+                required
+                maxlength="30"
+              />
+              <label for="ilogin"></label>
+            </div>
+            <div class="campo">
+              <i class="fa-solid fa-key"></i>
+              <input
+                type="password"
+                name="Senha"
+                id="isenha"
+                placeholder="sua senha"
+                autocomplete="current-password"
+                required
+                minlength="8"
+                maxlength="12"
+              />
+              <label for="isenha"></label>
+            </div>
+            <div class="form-btn">
+              <input class="btn__form" type="submit" value="Entrar" />
+              <a class="btn__form" href="#">Esqueci a senha</a>
+            </div>
           </form>
         </div>
       </section>
